@@ -75,11 +75,11 @@ function Inventory() {
               Add Item
             </Button>
           </SheetTrigger>
-          <SheetContent>
-            <SheetHeader>
-              <SheetTitle>Add New Item</SheetTitle>
+          <SheetContent className="w-[500px] sm:max-w-[500px] p-8 bg-gray-50">
+            <SheetHeader className="pb-6 border-b border-gray-200">
+              <SheetTitle className="text-2xl font-bold text-gray-900">Add New Item</SheetTitle>
             </SheetHeader>
-            <div className="mt-6">
+            <div className="mt-8 px-2">
               <AddItemForm 
                 onSuccess={handleItemAdded}
                 onCancel={() => setIsAddItemOpen(false)}
